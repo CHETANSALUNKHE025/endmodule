@@ -1,13 +1,1 @@
-echo "HELLO TO MY PROJECT"
-docker build -t acharyaditiss/myproject:latest .
 #docker run -d --name myweb -p 80:80 acharyaditiss/myproject:latest
-docker login -u acharyaditiss -p $password
-docker push acharyaditiss/myproject:latest
-# TERRAFORM
-terraform init
-terraform plan
-terraform apply -auto-approve
-sleep 60
-ansible web -i inventory.ini -m ping
-sleep 30
-ansible-playbook -i inventory.ini myproject.yaml
